@@ -1,0 +1,31 @@
+Mean
+• AKA Average
+• Sum / number of samples
+Median
+• If you have an even number of samples,take the average of the two in the middle.
+• Median is less susceptible to outliers than the mean
+
+Mode
+• The most common value in a data set
+▫ Not relevant to continuous numerical data
+
+Variance measures how “spread-out” the data is.
+• Variance (σ 2 ) is simply the average of the squared differences from the mean
+
+Moments
+• Quantitative measures of the shape of a probability density function
+• Mathematically they are a bit hard to wrap your head around:
+▫ μ n =
+∞
+−∞
+x − c n f x dx (for moment n around value c)
+• But intuitively, it’s a lot simpler in statistics.
+The first moment is the mean.
+The second moment is the variance.
+--> third moment is “skew” (γ)
+• How “lopsided” is the distribution?
+• A distribution with a longer tail on the left will be skewed left, and havea negative skew.
+-->The fourth moment is “kurtosis”
+• How thick is the tail, and how sharp is the peak, compared to a normal
+distribution?
+• Example: higher peaks have higher kurtosis
