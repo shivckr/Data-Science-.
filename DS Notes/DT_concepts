@@ -1,0 +1,58 @@
+DT:
+---------------------
+when Input  variable not linarly impacting output variable thats when we go for  DT generally.
+most commonly used in classification problem, but it works for both continues & catogorical datsets
+
+DT Idea is to divide the data in homogenious class, then it is easy to classify.
+Lower the value of GINI index higher is the homogenity
+
+
+IG measures the disorganization in the system known as entropy.
+
+
+Steps to calculate entropy:
+ ----------------------------
+  1: calculate the entropy of parent node
+  2: calculate the entropy of each individual node of split & calculate the weighted avg of all sub node available in split.
+
+Entropy is more fair as compaired to gini index, since it uses logrithm and normalize the the value.
+Gini index has mas value 0.5 in Binary classification. 
+
+Questions in DT:
+--------------------
+1..why scaling is not required in DT & RF?
+2..what to do if features have high correlation in DT
+3.. why do we go for RF? 
+    overfit problem, when data works for only for training model.
+
+
+EDA in DT:
+-----------------------
+>>For Numerical features:
+use lmplot, Boxplot
+
+>>for Catogorical Features:
+  use countplot, factorplot, 
+
+>> to find out correaltion among features:
+     use heatmap
+      sns.heatmap(corr, annot=True)
+     
+>>  find out out which features have correlations using above plots
+
+Feature Engineering:
+-------------------------
+>> check if data is imbalance 
+>> dummification of catogorical values 
+      pd.get_dummies(dataframe, drop_first=True)
+>> Merging dummified and categorical columns.
+      pd.concat([num_df,cat_cols], axis=1 )
+
+Methods used:
+----------------------------------
+dataframe.head()
+dataframe.tail()
+telco_df.isna().sum()
+telco_df.info()
+telco_df.describe()
+corr = telco_df.corr()----------used in EDA
