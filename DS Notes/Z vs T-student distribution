@@ -1,0 +1,9 @@
+when to use Z distribution
+ 1. population SD is knwon(sigma)
+ 2. sample size is >30
+ 
+ z = x – μ / σ, 
+ T-distribution
+  z = x – μ / s, 
+ except that x̄ (the sample mean) is used instead of μ (the population mean) and
+ s (the sample standard deviation) is used instead of σ (the population standard deviation).
